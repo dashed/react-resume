@@ -1,5 +1,5 @@
-react-resume
-============
+react-resume 📄
+==============
 
 > Generate resumes using [React](https://github.com/facebook/react), [`puppeteer`](https://github.com/GoogleChrome/puppeteer), and [`styled-components`](https://github.com/styled-components/styled-components).
 
