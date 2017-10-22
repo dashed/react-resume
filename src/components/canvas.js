@@ -1,8 +1,6 @@
 // 3rd-party imports
 
-import React from "react";
-
-import styled, { injectGlobal } from "styled-components";
+import styled from "styled-components";
 
 // component
 

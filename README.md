@@ -5,6 +5,10 @@ react-resume 📄
 
 Inspired by: https://github.com/salomonelli/best-resume-ever
 
+**HTML preview:** https://react-resume.netlify.com/
+
+**PDF output:** [`examples/resume.pdf`](examples/resume.pdf)
+
 ## Included batteries:
 
 - [`create-react-app`](https://github.com/facebookincubator/create-react-app)

@@ -1,8 +1,6 @@
 // 3rd-party imports
 
-import React from "react";
-
-import styled, { injectGlobal } from "styled-components";
+import styled from "styled-components";
 
 // component
 
@@ -10,7 +8,6 @@ const Page = styled.div`
     width: 21cm;
     height: 29.69cm;
     position: relative;
-    page-break-after: auto;
     overflow: hidden;
 
     background-color: #fff;
