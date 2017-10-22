@@ -5,12 +5,13 @@ import styled from "styled-components";
 // component
 
 const Page = styled.div`
-    width: 21cm;
-    height: 29.69cm;
+    width: 8.5in;
+    height: 11in;
+
     position: relative;
     overflow: hidden;
 
-    background-color: #fff;
+    background-color: ${({ bgcolor }) => (bgcolor ? bgcolor : "#fff")};
     box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.2);
 
     margin-top: 15px;
@@ -27,15 +28,16 @@ const Page = styled.div`
     @media print {
         box-shadow: none;
 
-        margin-top: 0;
-        margin-bottom: 0;
+        margin: 0;
+        box-sizing: border-box;
+        page-break-after: always;
 
         &:first-of-type {
-            margin-top: 0;
+            margin: 0;
         }
 
         &:last-of-type {
-            margin-bottom: 0;
+            margin: 0;
         }
     }
 `;

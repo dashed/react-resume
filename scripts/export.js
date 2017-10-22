@@ -71,7 +71,7 @@ const convert = async () => {
 
     await page.pdf({
         path: path.join(OUT_DIR, PDF_FILENAME),
-        format: "A4"
+        format: "letter"
     });
 
     await browser.close();
