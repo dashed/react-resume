@@ -23,7 +23,7 @@ Usage
 
 2. Run `yarn install` (or `npm install`)
 
-3. Run `create-react-app` in development mode: `yarn start`
+3. Run `create-react-app` in development mode: `yarn start` (or `npm start`)
 
 4. Open http://localhost:3000 to view it in the browser.
 
