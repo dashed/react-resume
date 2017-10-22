@@ -2,66 +2,47 @@
 
 import React from "react";
 
-import styled from "styled-components";
+import styled, { injectGlobal } from "styled-components";
+
+// local imports
+
+import Canvas from "./canvas";
+import Page from "./page";
 
 // component
 
-const ResumeWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+injectGlobal`
+  @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
-    overflow-x: hidden;
-    background: #adb5bd;
-
-    -webkit-print-color-adjust: exact;
-
-    @media print {
-        background: #fff;
-    }
+  body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12pt;
+  }
 `;
 
-const Page = styled.div`
-    width: 21cm;
-    height: 29.69cm;
-    position: relative;
-    page-break-after: auto;
-    overflow: hidden;
+const Margin = styled.div`
+    margin-left: 1in;
+    margin-right: 1in;
+    margin-top: 0.75in;
+    margin-bottom: 0.75in;
+`;
 
-    background-color: #fff;
-
-    margin-top: 15px;
-    margin-bottom: 15px;
-
-    &:first-of-type {
-        margin-top: 30px;
-    }
-
-    &:last-of-type {
-        margin-bottom: 30px;
-    }
-
-    @media print {
-        border: none;
-        margin-top: 0;
-        margin-bottom: 0;
-
-        &:first-of-type {
-            margin-top: 0;
-        }
-
-        &:last-of-type {
-            margin-bottom: 0;
-        }
-    }
+const Header = styled.div`
+    font-weight: 900;
+    font-size: 24.88pt;
+    text-align: center;
 `;
 
 const Resume = () => {
     return (
-        <ResumeWrapper>
-            <Page>hello</Page>
+        <Canvas>
+            <Page>
+                <Margin>
+                    <Header>Alberto P. Leal</Header>
+                </Margin>
+            </Page>
             <Page>world</Page>
-        </ResumeWrapper>
+        </Canvas>
     );
 };
 
