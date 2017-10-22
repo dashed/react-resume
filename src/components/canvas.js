@@ -9,12 +9,14 @@ const Canvas = styled.div`
     flex-direction: column;
     align-items: center;
 
-    overflow-x: hidden;
     background-color: #e9ecef;
 
     -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
 
     @media print {
+        display: block;
+
         background-color: #fff;
     }
 `;
