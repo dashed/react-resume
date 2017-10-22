@@ -14,8 +14,6 @@ const Page = styled.div`
     overflow: hidden;
 
     background-color: #fff;
-
-    border: 1px solid #ced4da;
     box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.2);
 
     margin-top: 15px;
@@ -30,7 +28,6 @@ const Page = styled.div`
     }
 
     @media print {
-        border: none;
         box-shadow: none;
 
         margin-top: 0;

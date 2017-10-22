@@ -7,7 +7,7 @@ import styled, { injectGlobal } from "styled-components";
 // local imports
 
 import Canvas from "./canvas";
-import Page from "./page";
+import PageBase from "./page";
 
 // component
 
@@ -16,20 +16,17 @@ injectGlobal`
 
   body {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 12pt;
+    font-size: 16px;
   }
 `;
 
-const Margin = styled.div`
-    margin-left: 1in;
-    margin-right: 1in;
-    margin-top: 0.75in;
-    margin-bottom: 0.75in;
+const Page = PageBase.extend`
+    padding: 0.5in;
 `;
 
 const Header = styled.div`
     font-weight: 900;
-    font-size: 24.88pt;
+    font-size: 32px;
     text-align: center;
 `;
 
@@ -37,9 +34,8 @@ const Resume = () => {
     return (
         <Canvas>
             <Page>
-                <Margin>
-                    <Header>Alberto P. Leal</Header>
-                </Margin>
+                <Header>Your Name</Header>
+                foo bar
             </Page>
             <Page>world</Page>
         </Canvas>
