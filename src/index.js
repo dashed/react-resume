@@ -1,8 +1,16 @@
+// 3rd-party imports
+
+import "normalize.css";
+import "sanitize.css";
+
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
+
+// local imports
+
+import Resume from "./components/resume";
 import registerServiceWorker from "./registerServiceWorker";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<Resume />, document.getElementById("root"));
+
 registerServiceWorker();
