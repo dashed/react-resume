@@ -12,9 +12,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "pretty": "prettier --write --tab-width 4 'src/**/*.js'"
+    "pdf": "node scripts/export.js",
+    "pretty": "prettier --write --tab-width 4 'src/**/*.js' 'scripts/**/*.js'"
   },
   "devDependencies": {
-    "prettier": "^1.7.4"
+    "mkdirp": "^0.5.1",
+    "prettier": "^1.7.4",
+    "puppeteer": "^0.12.0"
   }
 }
