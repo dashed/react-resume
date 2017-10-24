@@ -5,9 +5,8 @@ import styled from "styled-components";
 // component
 
 const Canvas = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    min-width: fit-content;
+    padding: 15px;
 
     background-color: #e9ecef;
 

@@ -8,6 +8,9 @@ const Page = styled.div`
     width: 8.5in;
     height: 11in;
 
+    margin-right: auto;
+    margin-left: auto;
+
     position: relative;
     overflow: hidden;
 
@@ -18,11 +21,11 @@ const Page = styled.div`
     margin-bottom: 15px;
 
     &:first-of-type {
-        margin-top: 30px;
+        margin-top: 0px;
     }
 
     &:last-of-type {
-        margin-bottom: 30px;
+        margin-bottom: 0px;
     }
 
     @media print {
