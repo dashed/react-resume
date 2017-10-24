@@ -14,7 +14,7 @@ const customResolve = path => {
     return import(`${path}`);
 };
 
-customResolve("./components/personal/personals")
+customResolve("./components/personal/personal")
     .then(({ default: Resume }) => {
         ReactDOM.render(<Resume />, document.getElementById("root"));
 
