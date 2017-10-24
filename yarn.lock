@@ -6088,6 +6088,10 @@ style-loader@0.18.2:
     loader-utils "^1.0.2"
     schema-utils "^0.3.0"
 
+styled-components-tachyons@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/styled-components-tachyons/-/styled-components-tachyons-0.0.5.tgz#7300a149bdd9eef51829b8e6b0b2c549dfff48d1"
+
 styled-components@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-2.2.1.tgz#f4835f1001c37bcc301ac3865b5d93466de4dd5b"

@@ -8,9 +8,22 @@ import ReactDOM from "react-dom";
 
 // local imports
 
-import Resume from "./components/resume";
 import registerServiceWorker from "./registerServiceWorker";
 
-ReactDOM.render(<Resume />, document.getElementById("root"));
+const customResolve = path => {
+    return import(`${path}`);
+};
 
-registerServiceWorker();
+customResolve("./components/personal/personals")
+    .then(({ default: Resume }) => {
+        ReactDOM.render(<Resume />, document.getElementById("root"));
+
+        registerServiceWorker();
+    })
+    .catch(reason => {
+        import("./components/example").then(({ default: Resume }) => {
+            ReactDOM.render(<Resume />, document.getElementById("root"));
+
+            registerServiceWorker();
+        });
+    });

@@ -3,6 +3,8 @@
 # result output
 out/
 
+src/components/personal/
+
 # dependencies
 /node_modules
 
