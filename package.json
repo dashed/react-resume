@@ -7,7 +7,7 @@
     "normalize.css": "^7.0.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-scripts": "1.0.14",
+    "react-scripts": "^1.0.17",
     "sanitize.css": "^5.0.0",
     "styled-components": "^2.2.1",
     "styled-components-tachyons": "^0.0.5"
@@ -23,6 +23,6 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "prettier": "^1.7.4",
-    "puppeteer": "^0.12.0"
+    "puppeteer": "^0.13.0"
   }
 }
