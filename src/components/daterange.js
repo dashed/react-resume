@@ -9,9 +9,7 @@ import styled from "styled-components";
 
 const NOT_SET = {};
 
-const Container = styled.span`
-    font-variant: small-caps;
-`;
+const Container = styled.span``;
 
 const DateRange = ({ start, end = NOT_SET }) => {
     invariant(start, "expected start");
