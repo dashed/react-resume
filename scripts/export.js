@@ -65,7 +65,7 @@ const convert = async () => {
 
     const page = await browser.newPage();
 
-    await page.goto(SERVER, { waitUntil: "networkidle" });
+    await page.goto(SERVER, { waitUntil: "networkidle2" });
 
     await makeOutDir();
 
