@@ -14,6 +14,10 @@ const SERVER = "http://localhost:3000/";
 const OUT_DIR = path.join(__dirname, "../out/");
 const PDF_FILENAME = "resume.pdf";
 
+function sleep(ms = 0) {
+  return new Promise(r => setTimeout(r, ms));
+}
+
 const fetchResponse = () => {
     return new Promise((resolve, reject) => {
         try {
@@ -68,6 +72,8 @@ const convert = async () => {
     await page.goto(SERVER, { waitUntil: "networkidle2" });
 
     await makeOutDir();
+
+    await sleep(2000);
 
     await page.pdf({
         path: path.join(OUT_DIR, PDF_FILENAME),
