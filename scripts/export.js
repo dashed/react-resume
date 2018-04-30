@@ -15,7 +15,7 @@ const OUT_DIR = path.join(__dirname, "../out/");
 const PDF_FILENAME = "resume.pdf";
 
 function sleep(ms = 0) {
-  return new Promise(r => setTimeout(r, ms));
+    return new Promise(r => setTimeout(r, ms));
 }
 
 const fetchResponse = () => {
